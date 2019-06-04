@@ -1,14 +1,23 @@
+
+var intervalId;
 function decoration() {
     // alert("Hello, World!");
 
     //document.getElementById("tarea").style.fontSize="24px";
-    setInterval(function(){
+    if(! intervalId){
+ intervalId =   setInterval(makeItBigger, 500);
+    } else{
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+}
+
+function makeItBigger(){
     var element = document.getElementById("tarea");
     var computedFontSize = window.getComputedStyle(element, null).getPropertyValue("font-size");
     var fontSize = parseInt(computedFontSize);
     element.style.fontSize = (fontSize + 2) + 'px';
-    }, 500);
-}
+    }
 
 function dec() {
     let checkBox = document.getElementById("check");
