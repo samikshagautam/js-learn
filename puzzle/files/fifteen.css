@@ -1,0 +1,95 @@
+
+
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	font-size: 40pt;
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url(background.jpg);
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+}
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: red;
+}
+
+/* grading styles -- for TAs only; not required by students */
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+/*
+init = function() {
+    var puzzleArea = document.getElementById('puzzlearea');
+    var divs = puzzleArea.getElementsByTagName("div");
+      
+    // initialize each piece
+    for (var i=0; i< divs.length; i++) {
+        var div = divs[i];
+        
+        // calculate x and y for this piece
+        var x = ((i % 4) * 100) ;
+        var y = (Math.floor(i / 4) * 100) ;
+
+        // set basic style and background
+        div.className = "puzzlepiece";
+        div.style.left = x + 'px';
+        div.style.top = y + 'px';
+        div.style.backgroundImage = 'url("background.jpg")';
+        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
+        
+        // store x and y for later
+        div.x = x;
+        div.y = y; 
+    }        
+};
+*/
+
+			/* <!-- the following are the actual fifteen puzzle pieces -->
+			<!-- <div class="puzzlepiece" id="0" style="left: 0px; top: 0px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: 0px 0px;">1</div>  
+			<div class="puzzlepiece" id="1" style="left: 100px; top: 0px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -100px 0px;">2</div>  
+			<div class="puzzlepiece" id="2" style="left: 200px; top: 0px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -200px 0px;">3</div>  
+			<div class="puzzlepiece" id="3" style="left: 300px; top: 0px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -300px 0px;">4</div>
+			<div class="puzzlepiece" id="4" style="left: 0px; top: 100px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: 0px -100px;">5</div>  
+			<div class="puzzlepiece" id="5" style="left: 100px; top: 100px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -100px -100px;">6</div>  
+			<div class="puzzlepiece" id="6" style="left: 200px; top: 100px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -200px -100px;">7</div>  
+			<div class="puzzlepiece" id="7" style="left: 300px; top: 100px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -300px -100px;">8</div>
+			<div class="puzzlepiece" id="8" style="left: 0px; top: 200px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: 0px -200px;">9</div>  
+			<div class="puzzlepiece" id="9" style="left: 100px; top: 200px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -100px -200px;">10</div> 
+			<div class="puzzlepiece" id="10" style="left: 300px; top: 200px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -200px -200px;">11</div> 
+			<div class="puzzlepiece" id="11" style="left: 300px; top: 300px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -300px -200px;">12</div>
+			<div class="puzzlepiece" id="12" style="left: 0px; top: 300px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: 0px -300px;">13</div> 
+			<div class="puzzlepiece" id="13" style="left: 100px; top: 300px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -100px -300px;">14</div> 
+			<div class="puzzlepiece" id="14" style="left: 200px; top: 300px; background-image: url(&quot;http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg&quot;); background-position: -200px -300px;">15</div> -->
+		 */
+
+			
